@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnonMart - Admin Dashboard</title>
+    <style>
+        /* Styles for admin dashboard */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .management-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+        .management-option {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .management-option:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AnonMart Admin Dashboard</h1>
+        <div class="management-options">
+            <div class="management-option" onclick="openPage('productmange.html')">
+                <h2>Manage Products</h2>
+                <p>View, add, or edit products</p>
+            </div>
+            
+            <div class="management-option" onclick="openPage('ordermanage.html')">
+                <h2>Order Management</h2>
+                <p>View and manage customer orders</p>
+            </div>
+            <div class="management-option" onclick="openPage('tracking.html')">
+                <h2>Tracking Management</h2>
+                <p>Track order shipments</p>
+            </div>
+            <div class="management-option" onclick="openPage('Customer.html')">
+                <h2>Feedback Management</h2>
+                <p>View and respond to customer feedback</p>
+            </div>
+            <div class="management-option" onclick="openPage('Employeeattendence.html')">
+                <h2>Employee Attendance</h2>
+                <p>Track employee attendance records</p>
+            </div>
+            <div class="management-option" onclick="openPage('Managing employees,html.html')">
+                <h2>Employee Management</h2>
+                <p>Add, edit, or remove employees</p>
+            </div>
+            <div class="management-option" onclick="openPage('supplier management.html')">
+                <h2>Supplier Management</h2>
+                <p>Manage suppliers and orders</p>
+            </div>
+            <div class="management-option" onclick="openPage('manage bills.html')">
+                <h2>Bill Management</h2>
+                <p>View and manage bills</p>
+            </div>
+            <div class="management-option" onclick="openPage('Transaction management.html')">
+                <h2>Transaction Management</h2>
+                <p>View and manage transactions</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
